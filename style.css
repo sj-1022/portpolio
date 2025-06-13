@@ -1,0 +1,49 @@
+body {
+    font-family: 'Pretendard', sans-serif;   /* 전체 글꼴 설정 */
+    background-color: #f9f9f9;             /* 배경색 연한 회색 */
+    margin: 0;                               /* 바깥 여백 제거 */
+    padding: 20px;                           /* 내부 여백 20px */
+}
+.container {
+    max-width: 1000px;                          /* 최대 너비 1000px로 제한 */
+    background: white;                        /* 배경색 흰색 */
+    margin: auto;                               /* 중앙 정렬 */
+    border-radius: 20px;                        /* 모서리 둥글게 */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);   /* 부드러운 그림자 */
+    padding: 40px;                              /* 안쪽 여백 넉넉하게 */
+}
+h1, h2 {
+    color: #ff6b6b;                         /* 진한 핑크 계열의 색상 */
+}
+.section {
+    margin-bottom: 50px;                        /* 아래쪽에 여백 50px */
+}
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 반응형 정렬 */
+    gap: 15px;                                                    /* 이미지 사이 여백 */
+    margin-top: 15px;                                             /* 위와의 간격 */
+}
+.images-grid img {
+    width: 100%;                                /* 가로폭 전체 사용 */
+    border-radius: 12px;                        /* 이미지 모서리 둥글게 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);     /* 그림자 효과로 입체감 */
+}
+ul {
+    list-style: none;   /* 기본 점 없애기 */
+    padding-left: 0;    /* 들여쓰기 제거 */
+}
+ul li::before {
+    content: "✔️ ";     /* 리스트 앞에 체크 이모지 넣기 */
+}
+a {
+  color: #0077cc;           /* 링크 색 파란색 */
+  text-decoration: none;       /* 밑줄 제거 */
+}
+a:hover {
+    text-decoration: underline;  /* 마우스를 올리면 밑줄 생김 */
+}
+.highlight {
+    color: #4e73df;           /* 글자 색상 */
+    font-weight: bold;          /* 굵게 표시 */
+}
